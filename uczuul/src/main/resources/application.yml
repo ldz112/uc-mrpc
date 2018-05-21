@@ -1,0 +1,21 @@
+server:
+  port:8080
+
+
+spring:
+  application:
+    name:api-gateway
+
+zuul:
+  routes:
+    zulla:
+       path:/auth1
+       serviceId:ucauth1
+    zullb:
+       path:/auth2
+       serviceId:ucauth2
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:http://localhost:8761/eureka/
