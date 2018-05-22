@@ -28,4 +28,5 @@ public class ZuulServer {
     public AccessFilter accessFilter() {
         return new AccessFilter();
     }
+
 }
